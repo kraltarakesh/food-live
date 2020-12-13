@@ -1,0 +1,46 @@
+footer {
+    padding: 90px 0 50px; 
+    background-image: url('../../assets//images//dark-pattern.jpg');
+    background-size: cover;
+    color: #a2a2a3;
+}
+footer .hasimg {
+    padding: 6px 0;
+    margin: 10px 0;
+}
+footer h4 {
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    margin-bottom: 15px;
+    font-size: 21px;
+}
+footer ul li a {
+    display: block;
+    padding: 5px 0;
+    color: #a2a2a3;
+}
+footer ul.two-columns li {
+    width: 50%;
+    float: left;
+}
+footer ul li a:hover {
+    color: #e8500e;
+    text-decoration: none;
+}
+.footer-bottom {
+    margin-top: 70px;
+}
+footer h4, footer .strong {
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 21px;
+}
+footer .highlighted {
+    color: #e8500e;
+    font-size: 21px;
+    font-weight: 600;
+    vertical-align: -1px;
+}
+

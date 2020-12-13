@@ -1,1 +1,203 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './assets/css/animate.min.css';
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #748796;
+    line-height: 1.8;
+}
+a{
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body .form-group{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+body .form-group label {
+    margin-bottom: 0;
+    color: #414551;
+    font-weight: 500;
+}
+.error,.required {
+    color: #dc3545;
+    font-weight: 500;
+    font-size: 12px;
+}
+.form-group .error {
+    color: #dc3545;
+    font-weight: 500;
+    font-size: 12px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.form-group i {
+    position: absolute;
+    left: 6px;
+    bottom: 11px;
+}
+.form-group .form-control {
+    padding-left: 22px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-group .form-control:hover,
+.form-group .form-control:active,
+.form-group .form-control:focus{
+    outline: 0 none;
+    box-shadow: unset;
+    border: 1px solid #ced4da;
+}
+.form-group .form-control.is-invalid,
+.form-group .form-control.is-invalid:hover,
+.form-group .form-control.is-invalid:active,
+.form-group .form-control.is-invalid:focus{
+    border-color: #dc3545
+}
+/* Modal CSS Start */
+body.modal-open {
+    /* padding-right: 0 !important; */
+}
+body.modal-open .navbar.sticky .nav-main{
+    right: 17px;
+    max-width: calc(100% - 17px);
+}
+.modal-header .modal-title {
+    margin: 0;
+    font-size: 26px;
+    color: #414551;
+}
+.modal-content .close {
+    padding: 0;
+    position: absolute;
+    right: 18px;
+    top: 14px;
+    font-size: 30px;
+}
+.modal-header label {
+    margin-bottom: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.modal-header label .register {
+    color: #e8500e;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 12px;
+}
+.modal-dialog .modal-body {
+    padding: 1rem 2.5rem;
+}
+.form-group.lost_password a {
+    color: #e8500e;
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-group.lost_password a:hover {
+    text-decoration: none;
+}
+.submit-btn .btn.btn-primary {
+    display: inline-block;
+    color: #e8500e;
+    background-color: #fff;
+    line-height: 36px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 2px solid #e8500e;
+    outline: none;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.submit-btn .btn.btn-primary:hover,
+.submit-btn .btn.btn-primary:active,
+.submit-btn .btn.btn-primary:focus {
+    background-color: #e8500e;
+    border-color: #e8500e;
+    color: #fff;
+    outline: 0 none;    
+    box-shadow: unset;
+}
+.remember-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-login label {
+    color: #748796;
+    margin-bottom: 0;
+    width: 100%;
+}
+.social-login a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    margin: 5px 10px 0 0;
+}
+.social-login a i {
+    display: block;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #e8500e;
+}
+.modal-footer .btn.btn-secondary {
+    border: 2px solid #dc3545;
+    background-color: #fff;
+    color: #dc3545;
+    font-weight: 500;
+}
+.modal-footer .btn.btn-secondary:hover,
+.modal-footer .btn.btn-secondary:active,
+.modal-footer .btn.btn-secondary:focus{
+    border: 2px solid #dc3545;
+    background-color: #dc3545;
+    color: #fff;
+    outline: 0 none;
+    box-shadow: unset;
+}
+.modal-content .close:hover,
+.modal-content .close:active,
+.modal-content .close:focus{
+    outline: 0 none;
+    color: #dc3545;
+}
+/* Modal CSS End */
+/* Responsive Design CSS Start */
+@media all and (max-width: 767px){
+.modal-dialog .modal-body {
+    padding: 1rem .5rem;
+}
+}
+@media all and (max-width: 375px){
+.modal-header .modal-title {
+    font-size: 22px;
+}
+.modal-header label .register {
+    margin-right: 0px;
+    font-size: 13px;
+}
+.modal-content .modal-header {
+    padding: 1rem .5rem;
+}
+}
