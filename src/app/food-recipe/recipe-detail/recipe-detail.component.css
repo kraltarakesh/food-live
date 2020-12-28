@@ -542,6 +542,106 @@
     font-size: 15px;
     margin-right: 3px;
 }
+.search-dish {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    position: relative;
+}
+.search-dish > input {
+    height: 50px;
+    font-size: 14px;
+    color: #101010;
+    width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+}
+.search-dish > button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+    color: #636363;
+    font-size: 14px;
+}
+.dishes-list-wrapper {
+    width: 100%;
+    margin-top: 55px;
+    position: relative;
+}
+.dishes-list {
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+.dishes-list > li {
+    width: 100%;
+}
+.featured-restaurant-box {
+    padding-top: 22px;
+    margin-top: 22px;
+    border-top: 1px solid #f5f5f5;
+    position: relative;
+    display: table;
+    width: 100%;
+}
+.dishes-list > li:first-child .featured-restaurant-box {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+.dishes-list > li .featured-restaurant-thumb {
+    width: 111px;
+    vertical-align: top;
+}
+.featured-restaurant-info {
+    padding-left: 25px;
+}
+.dishes-list .featured-restaurant-info > h4 {
+    width: auto;
+    margin-bottom: 10px;
+}
+.featured-restaurant-info .price {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.featured-restaurant-info > p {
+    color: #636363;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+.dishes-list .featured-restaurant-info > span.price {
+    float: right;
+    margin-top: 6px;
+}
+.post-meta {
+    display: inline-block;
+    float: none;
+    line-height: 32px;
+    list-style: outside none none;
+    margin: 0;
+    padding-left: 50px;
+}
+.dishes-list .post-meta {
+    padding-left: 0;
+}
+.post-meta > li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 12px;
+    color: #636363;
+    letter-spacing: -0.3px;
+}
+.post-meta > li:last-child {
+    margin-right: 0;
+}
+.post-meta > li i {
+    font-size: 18px;
+    color: #a0a0a0;
+    margin-right: 5px;
+}
 /* Restaurant Detail section section End */
 @media all and (max-width:1024px) {
 .block {

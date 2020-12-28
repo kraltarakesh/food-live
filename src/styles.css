@@ -300,6 +300,34 @@ a, input, button, textarea, :before, :after, .owl-nav > div, .owl-dots > div, .r
 .sudo-bottom:before, .select-wrp2 .chosen-container > a {
     border-radius: 2px;
 }
+.title3, .title4 {
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    font-family: Poppins;
+    margin-bottom: 40px;
+    font-weight: 600;
+    margin-top: 0;
+    color: #202020;
+}
+.title3 span, .title4 span {
+    position: relative;
+}
+.title3 span.sudo-bottom:before, .title4 span.sudo-bottom:before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+}
+.dishes-list-wrapper .post-rate {
+    position: static;
+    margin-left: 20px;
+    display: inline-block;
+}
+.post-rate > i {
+    font-size: 12px;
+}
 /* Responsive Design CSS Start */
 @media all and (max-width: 767px){
 
