@@ -1,5 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -15,23 +14,16 @@ export class HeaderComponent implements OnInit {
   IsmodelShow=false;
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e) {
-     if (window.pageYOffset > 92) {
+     if (window.pageYOffset > 136) {
        let element = document.getElementById('navbar');
        element.classList.add('sticky');
+       let element1 = document.getElementById('animateMain');
+      element1.classList.add('fadeInDown');
      } else {
       let element = document.getElementById('navbar');
         element.classList.remove('sticky');
-     }
-     if (window.pageYOffset > 92) {
-      let element1 = document.getElementById('animateMain');
-      element1.classList.add('fadeInDown');
-    } else {
-       let element1 = document.getElementById('animateMain');
+        let element1 = document.getElementById('animateMain');
       element1.classList.remove('fadeInDown');
-    }
+     }
   }
-  close() {
-    this.IsmodelShow=true;// set false while you need open your model popup
-   // do your more code
-}
 }

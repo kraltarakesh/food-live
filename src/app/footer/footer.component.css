@@ -1,46 +1,121 @@
-footer {
-    padding: 90px 0 50px; 
-    background-image: url('../../assets//images//dark-pattern.jpg');
+footer .footer-content{
+    padding: 80px 0;
     background-size: cover;
     color: #a2a2a3;
+    background-color: #1b1b1b;;
 }
-footer .hasimg {
-    padding: 6px 0;
-    margin: 10px 0;
-}
-footer h4 {
+footer .widget-title {
     color: #ffffff;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
-    margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 20px;
+    line-height: 1.1;
 }
-footer ul li a {
-    display: block;
-    padding: 5px 0;
-    color: #a2a2a3;
+.social-footer a {
+    display: inline-block;
+    margin: 10px 4px 0;
+    line-height: 27px;
+    width: 27px;
+    color: #999;
+    background-color: rgba(255,255,255,0.05);
+    font-size: 12px;
+    border-radius: 50%;
+    text-align: center;
 }
-footer ul.two-columns li {
-    width: 50%;
+.social-footer a:hover {
+    color: #fff;
+    background-color: #ea1b25;
+}
+.widget {
+    margin-bottom: 50px;
+    width: 100%;
+}
+.widget ul li {
+    font-size: 13px;
+    color: #999;
     float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 12px;
 }
-footer ul li a:hover {
-    color: #e8500e;
+.widget ul li a {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.4;
+}
+.widget ul li a:before {
+    content: "\f101";
+    font-family: fontawesome;
+    position: absolute;
+    left: 0;
+}
+.widget ul li a:hover {
+    padding-left: 25px;
+    color: #ea1b25;
     text-decoration: none;
 }
-.footer-bottom {
-    margin-top: 70px;
+.get_in_touch ul li {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 20px;
 }
-footer h4, footer .strong {
-    color: #ffffff;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 300;
-    font-size: 21px;
+.get_in_touch ul li a {
+    padding-left: 0;
 }
-footer .highlighted {
-    color: #e8500e;
-    font-size: 21px;
-    font-weight: 600;
-    vertical-align: -1px;
+.get_in_touch ul li i {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    top: 2px;
+    color: #ea1b25;
 }
+.get_in_touch ul li a:before {
+    display: none;
+}
+.bottom-bar {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #1b1b1b;
+}
+.bottom-bar p {
+    color: #999;
+    margin-bottom: 0;
+    padding: 22px;
+    font-weight: 700;
+    font-size: 12px;
+}
+.bottom-bar p a{
+    color: #ea1b25;
+}
+.bottom-bar p a:hover{
+    color: #ffbe00;
+}
+@media screen and (max-width: 1024px){
+footer .footer-content {
+    padding: 60px 0;
+}
+}
+@media screen and (max-width: 991px){
+.social-footer {
+    margin-bottom: 30px;
+}
+}
+@media screen and (max-width: 767px){
+.customer_care, .get_in_touch {
+    margin-top: 40px;
+}
+footer .footer-content {
+    padding: 30px 0;
+}
+}
+@media screen and (max-width: 575px){
+.header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+
 

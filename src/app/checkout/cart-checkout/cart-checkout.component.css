@@ -1,0 +1,309 @@
+.block {
+    position: relative;
+    width: 100%;
+}
+.block.top-padd30 {
+    padding: 30px;
+}
+.sec-box {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    padding: 50px 45px;
+    background-color: #fff;
+}
+.page-title-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 17px 0 21px;
+    z-index: 1;
+}
+.page-title-inner {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+}
+.page-title-inner > h1 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+.page-title-inner > span {
+    font-size: 22px;
+    color: #fff;
+}
+.reservation-tabs-list {
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+.reservation-tabs-list .nav-tabs {
+    border-bottom: 0;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 20px 32px rgba(0,0,0,.06);
+    padding: 60px 15px;
+}
+.reservation-tabs-list .nav-tabs > li {
+    width: 100%;
+    margin-bottom: 0;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 14px;
+    color: #444;
+}
+.nav-tabs > li > a {
+    border: 0;
+    background-color: transparent;
+}
+.reservation-tabs-list .nav-tabs > li a {
+    padding: 30px 0 0;
+    margin-right: 0;
+    border-radius: 0;
+    display: inline-block;
+    position: relative;
+    color: #444;
+}
+.reservation-tabs-list .nav-tabs > li + li a {
+    margin-top: 35px;
+}
+.reservation-tabs-list .nav-tabs > li a.active{
+    color: #ea1b25;
+}
+.reservation-tabs-list .nav-tabs > li a:hover{
+    text-decoration: none;
+}
+.reservation-tabs-list .nav-tabs > li + li a::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #e5e6e6;
+    height: 34px;
+    left: 50%;
+    top: -31px;
+    margin-left: -1px;
+}
+.reservation-tabs-list .nav-tabs > li a span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 11px;
+    line-height: 23px;
+    width: 23px;
+    background-color: #e6e5e5;
+    margin-left: -11.5px;
+}
+.reservation-tabs-list .nav-tabs > li a span:before {
+    content: "\f00c";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ea1b25;
+    border-radius: inherit;
+    color: #fff;
+    font-family: fontawesome;
+    font-weight: 400;
+    font-size: 10px;
+    opacity: 0;
+}
+.reservation-tabs-list .nav-tabs > li a.active span::before {
+    opacity: 1;
+}
+.reservation-tabs-list .nav-tabs > li a.active span,
+.reservation-tabs-list .nav-tabs > li a.active span::before{
+    background-color: #ea1b25;
+    color: #fff;
+}
+.reservation-tabs-list .nav-tabs > li a:hover{
+    color: #ea1b25
+}
+.tab-content>.active {
+    opacity: 1;
+}
+.restaurant-info-form {
+    width: 100%;
+    padding: 60px;
+    background-color: #f9f9f9;
+}
+.reservation-tab-content .tab-pane > div > h4 {
+    font-size: 20px;
+    font-family: Poppins;
+    color: #3c3838;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.ordr-lst {
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+    box-shadow: 0 20px 32px rgba(0,0,0,0.06);
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+.ordr-lst > li {
+    font-size: 12px;
+    font-family: Poppins;
+    line-height: 55px;
+    padding-left: 40px;
+}
+.ordr-lst > li.lst-hed {
+    font-weight: 700;
+    font-size: 11px;
+    color: #fff;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 32px rgba(0,0,0,0.04);
+}
+.ordr-lst > li span {
+    color: #444;
+    float: right;
+    width: 29.3%;
+    text-align: center;
+    border-left: 1px solid #eee;
+    font-size: 13px;
+    float: right;
+}
+.ordr-lst > li.lst-hed span {
+    border-left: 0;
+    color: inherit;
+    font-size: inherit;
+}
+.ordr-lst > li + li {
+    border-top: 1px solid #eee;
+}
+.ordr-lst > li.red-bg,.ordr-lst > li.red-bg span {
+    color: #fff;
+}
+.order-wrapper2 {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 60px;
+}
+.ordr-lst > li.red-bg span {
+    border-left: 0;
+}
+.ordr-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+.ordr-btn a, .step-buttons button, .step-buttons a {
+    color: #fff;
+    font-size: 11px;
+    font-family: Poppins;
+    padding: 13px 25px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.restaurant-info-form button.red-bg:hover, .restaurant-info-form a.red-bg:hover,.ordr-btn a:hover {
+    background-color: #333;
+    text-decoration: none;
+}
+.mrg20 {
+    margin: 0 -10px;
+}
+.restaurant-info-form label, .profile-info-form label {
+    font-family: lato;
+    font-weight: 400;
+    color: #3c3838;
+    font-size: 12px;
+    margin-bottom: 9px;
+    width: 100%;
+}
+.restaurant-info-form input, .restaurant-info-form textarea, 
+.profile-info-form input, .profile-info-form textarea, .loc-srch > input {
+    width: 100%;
+    margin-bottom: 17px;
+    font-size: 11px;
+    color: #888;
+    font-family: lato;
+    height: 50px;
+    padding: 10px 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.04);
+    border: medium none;
+}
+input:hover,input:active,input:focus,
+textarea:hover,textarea:active,textarea:focus{
+    outline: 0 none;
+}
+.restaurant-info-form .required{
+    font-size: 100%;
+    margin-left: 5px;
+}
+.restaurant-info-form textarea, .profile-info-form textarea {
+    height: 155px;
+    resize: none;
+}
+.step-buttons {
+    width: 100%;
+    margin-top: 45px;
+    text-align: center;
+}
+.step-buttons button, .step-buttons a {
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 11px;
+    font-family: Poppins;
+    padding: 13px 25px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.step-buttons a.red-bg{
+    background-color: #ea1b25;
+}
+.step-buttons a:hover{
+    background-color: #ea1b25;
+    text-decoration: none;
+}
+.step-buttons a.red-bg:hover{
+    background-color: #2a2a2a;
+}
+.pay-mnt {
+    padding-left: 0px;
+    width: 90%;
+    max-width: 200px;
+}
+.pay-mnt .radio-box {
+    width: 100%;
+}
+.thankyou-wrap p {
+    color: #333;
+    font-weight: 500;
+    margin-top: 12px;
+}
+@media screen and (max-width: 767px){
+.order-wrapper2,.restaurant-info-form {
+    width: 100%;
+    padding: 30px;
+}
+.block.top-padd30{
+    padding: 30px 15px;
+}
+.reservation-tab-content {
+    margin-top: 30px;
+}
+.reservation-tabs-list .nav-tabs {
+    padding: 30px 15px;
+}
+}
+@media screen and (max-width: 480px){
+.sec-box {
+    padding: 20px 15px;
+}
+.order-wrapper2, .restaurant-info-form {
+    padding: 30px 15px;
+}
+.block.top-padd30{
+    padding: 30px 0px;
+}
+.page-title-inner > h1 {
+    font-size: 28px;
+}
+.page-title-inner > span {
+    font-size: 18px;
+}
+}

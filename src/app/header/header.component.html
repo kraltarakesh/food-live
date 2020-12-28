@@ -1,4 +1,46 @@
-<nav class="navbar navbar-expand-lg navbar-dark" id ="navbar">
+<header class="header">
+  <div class="top-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-9 col-sm-8">
+          <ul>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">FEEL LIKE EATING</a>
+              <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Burger</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Pizza</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Fried Rice</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Chicken Shots</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CHOOSE LOCATION</a>
+              <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">New york</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Washington</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Chicago</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Los Angeles</a>
+              </div>
+            </li>
+          </ul>          
+        </div>
+        <div class="col-3 col-sm-4">
+          <div class="social">
+            <a href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            <a href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="#" title="Google Plus" itemprop="url" target="_blank"><i class="fa fa-google-plus"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-md navbar-dark" id ="navbar">
     <div class="nav-main animated" id="animateMain">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="Food Logo"/></a>
@@ -8,11 +50,12 @@
             <span></span>
             <span></span>
           </div>
-        </button>
+        </button>        
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav">
-            <li class="nav-item active dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Home
+            <li class="nav-item active dropdown d-none">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
+                <span class="red-clr">FOOD ORDERING</span><br /> Home
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
                 <ul class="dropdown-menu fade-down">
@@ -24,14 +67,9 @@
                   <li><a class="dropdown-item" href="#"> Home Page 4 </a></li>
                 </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link"  routerLink="/gfgfh" routerLinkActive = "active">Restaurants</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link"  routerLink="/" routerLinkActive = "active">Food</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Pages
+            <li class="nav-item dropdown d-none">
+              <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">
+                <span class="red-clr">REAL FOOD</span><br /> Contact US
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
                 <ul class="dropdown-menu fade-down">
@@ -43,8 +81,29 @@
                   <li><a class="dropdown-item" href="#"> Home Page 4 </a></li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item account-nav d-none">
+              <a class="nav-link" routerLink="/" routerLinkActive = "active">Register partners</a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link"  routerLink="/blog" routerLinkActive = "active">Blog</a>
+            </li> -->
+            <li class="nav-item lang-drop dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Select Language</a>
+              <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">English</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Indian</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Chinese</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Russian</a>
+              </div>
+            </li>
+            <li class="nav-item account-nav">
+              <a class="nav-link" routerLink="/" routerLinkActive = "active">Login</a>
+            </li>
+            <li class="nav-item account-nav">
+              <a class="nav-link" routerLink="/" routerLinkActive = "active">Register</a>
             </li>
             <!-- <li class="nav-item dropdown">
               <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">  Hover up  </a>
@@ -56,146 +115,7 @@
             </li> -->
           </ul>
         </div> <!-- navbar-collapse.// -->
-        <ul class="navbar-nav account-nav ">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/" routerLinkActive = "active" data-toggle="modal" data-target="#myModal">Login/Register</a>
-          </li>
-        </ul>
       </div>
     </div>
   </nav>
-    <!-- Button to Open the Modal -->
-    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-      Open modal
-    </button> -->
-    <!-- The Login Modal -->
-    <div class="modal fade" [hidden]="IsmodelShow" id="myModal">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-        <div class="modal-content">      
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Login</h4>
-            <label for="register-toggle">
-              <span class="register" (click)="close()" data-toggle="modal" data-target="#myRegModal">Don't have an account?</span>
-            </label>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>        
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="form">            
-              <div class="col2-set" id="customer_login">
-                <div class="">
-                  <form method="post" class="login">
-                    <div class="form-group">
-                      <label for="username">Username or email address <span class="required">*</span></label>
-                      <i aria-hidden="true" class="fa fa-envelope"></i>
-                      <input type="text" class="form-control" placeholder="Enter email" name="username" id="username" value="">
-                      <div class="error d-none">This field is required</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password <span class="required">*</span></label>
-                        <i aria-hidden="true" class="fa fa-unlock-alt"></i>
-                        <input class="form-control" type="password" placeholder="Password" name="password" id="password">
-                        <div class="error d-none">This field is required</div>
-                    </div>
-                    <div class="remember-section">
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" id="customCheck" name="example1" class="custom-control-input">
-                          <label for="customCheck" class="custom-control-label">Remember me</label>
-                        </div>
-                        <div class="error d-none">This field is required</div>
-                      </div>
-                      <div class="form-group lost_password"><a href="#">Lost your password?</a></div>
-                    </div>
-                    <div class="form-group submit-btn">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                  </div>       
-                    <!-- <div class="form-group custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                      <label class="custom-control-label" for="customCheck">Remember me</label>
-                      <div class="error d-none">This field is required</div>
-                    </div> -->
-                    <!-- <p class="form-group lost_password">
-                        <a href="#">Lost your password?</a>
-                    </p> -->
-                  </form>
-                </div>
-              </div>
-              <div class="social-login">
-                  <label>Connect with Social Networks:</label> <a href="/foodpicky/?social-login=facebook"><i class="fa fa-facebook"></i></a><a href="/foodpicky/?social-login=google"><i class="fa fa-google"></i></a>
-                </div>
-            </div>
-          </div>        
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>        
-        </div>
-      </div>
-    </div>
-     <!-- The Register Modal -->
-     <div class="modal fade" id="myRegModal">
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-        <div class="modal-content">      
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Register</h4>
-            <label for="register-toggle">
-              <span class="register">Already have an account?</span>
-            </label>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>        
-          <!-- Modal body -->
-          <div class="modal-body">
-            <div class="form">            
-              <div class="col2-set" id="customer_login">
-                <div class="">
-                  <form method="post" class="login">
-                    <div class="form-group">
-                      <label for="username1">Username or email address <span class="required">*</span></label>
-                      <i aria-hidden="true" class="fa fa-envelope"></i>
-                      <input type="text" class="form-control" placeholder="Enter email" name="username" id="username1" value="">
-                      <div class="error d-none">This field is required</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="password1">Password <span class="required">*</span></label>
-                        <i aria-hidden="true" class="fa fa-unlock-alt"></i>
-                        <input class="form-control" type="password" placeholder="Password" name="password" id="password1">
-                        <div class="error d-none">This field is required</div>
-                    </div>
-                    <div class="remember-section">
-                      <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                          <input type="checkbox" id="customCheckReg" name="example1" class="custom-control-input">
-                          <label for="customCheckReg" class="custom-control-label">Apply to become a vendor? </label>
-                        </div>
-                        <div class="error d-none">This field is required</div>
-                      </div>
-                    </div>
-                    <div class="form-group submit-btn">
-                        <button type="submit" class="btn btn-primary">Register</button>
-                  </div>       
-                    <!-- <div class="form-group custom-control custom-checkbox">
-                      <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
-                      <label class="custom-control-label" for="customCheck">Remember me</label>
-                      <div class="error d-none">This field is required</div>
-                    </div> -->
-                    <!-- <p class="form-group lost_password">
-                        <a href="#">Lost your password?</a>
-                    </p> -->
-                  </form>
-                </div>
-              </div>
-              <div class="social-login">
-                  <label>Connect with Social Networks:</label> <a href="/foodpicky/?social-login=facebook"><i class="fa fa-facebook"></i></a><a href="/foodpicky/?social-login=google"><i class="fa fa-google"></i></a>
-                </div>
-            </div>
-          </div>        
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>        
-        </div>
-      </div>
-    </div>
+</header>

@@ -1,16 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lato|Poppins:300,400,400i,500,600,700,800');
 @import './assets/css/animate.min.css';
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #748796;
     line-height: 1.8;
 }
-a{
+a,a:hover{
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all .3s linear;
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0rem;
@@ -21,6 +23,9 @@ ol, ul {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+img{
+    max-width: 100%;
 }
 body .form-group{
     position: relative;
@@ -67,127 +72,237 @@ body .form-group label {
 .form-group .form-control.is-invalid:focus{
     border-color: #dc3545
 }
-/* Modal CSS Start */
-body.modal-open {
-    /* padding-right: 0 !important; */
+.red-clr{
+    color: #ea1b25;
 }
-body.modal-open .navbar.sticky .nav-main{
-    right: 17px;
-    max-width: calc(100% - 17px);
-}
-.modal-header .modal-title {
-    margin: 0;
-    font-size: 26px;
-    color: #414551;
-}
-.modal-content .close {
-    padding: 0;
-    position: absolute;
-    right: 18px;
-    top: 14px;
-    font-size: 30px;
-}
-.modal-header label {
-    margin-bottom: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.modal-header label .register {
-    color: #e8500e;
-    cursor: pointer;
-    font-weight: 500;
-    margin-right: 12px;
-}
-.modal-dialog .modal-body {
-    padding: 1rem 2.5rem;
-}
-.form-group.lost_password a {
-    color: #e8500e;
-    font-size: 14px;
-    font-weight: 500;
-}
-.form-group.lost_password a:hover {
-    text-decoration: none;
-}
-.submit-btn .btn.btn-primary {
-    display: inline-block;
-    color: #e8500e;
-    background-color: #fff;
-    line-height: 36px;
-    height: 40px;
-    font-weight: 500;
-    font-size: 14px;
-    padding: 0 15px;
-    border-radius: 3px;
-    cursor: pointer;
-    border: 2px solid #e8500e;
-    outline: none;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-.submit-btn .btn.btn-primary:hover,
-.submit-btn .btn.btn-primary:active,
-.submit-btn .btn.btn-primary:focus {
-    background-color: #e8500e;
-    border-color: #e8500e;
-    color: #fff;
-    outline: 0 none;    
-    box-shadow: unset;
-}
-.remember-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.social-login label {
-    color: #748796;
-    margin-bottom: 0;
-    width: 100%;
-}
-.social-login a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
+.brd-rd50{
     border-radius: 50%;
-    text-align: center;
-    overflow: hidden;
-    margin: 5px 10px 0 0;
 }
-.social-login a i {
-    display: block;
-    line-height: 30px;
-    color: #ffffff;
-    font-size: 12px;
-    background-color: #e8500e;
+.red-bg{
+    background-color: #ea1b25;
 }
-.modal-footer .btn.btn-secondary {
-    border: 2px solid #dc3545;
-    background-color: #fff;
-    color: #dc3545;
-    font-weight: 500;
+.brd-rd30 {
+    border-radius: 30px;
 }
-.modal-footer .btn.btn-secondary:hover,
-.modal-footer .btn.btn-secondary:active,
-.modal-footer .btn.btn-secondary:focus{
-    border: 2px solid #dc3545;
-    background-color: #dc3545;
+.featured-restaurant-info .post-rate {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+}
+.yellow-bg {
+    background-color: #ffbe00;
+}
+.post-rate {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 11px;
     color: #fff;
-    outline: 0 none;
-    box-shadow: unset;
+    font-family: Poppins;
+    font-weight: 700;
+    padding: 6px 10px;
+    z-index: 1;
 }
-.modal-content .close:hover,
-.modal-content .close:active,
-.modal-content .close:focus{
-    outline: 0 none;
-    color: #dc3545;
+.post-rate > i {
+    font-size: 12px;
 }
-/* Modal CSS End */
+.brd-rd2, .featured-restaurant-carousel .owl-nav > div, 
+.sudo-bottom:before, .select-wrp2 .chosen-container > a {
+    border-radius: 2px;
+}
+.brd-rd5 {
+    border-radius: 5px;
+}
+.blackish:before {
+    background-color: #000000;
+}
+.opac50:before {
+    opacity: .5;
+}
+.gray-bg {
+    background-color: #f6f6f6;
+}
+.gradient-brd:after {
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+.gradient-brd:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+}
+.gradient-brd:before {
+    background: linear-gradient(90deg, #e03335 0%, #00cfc8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e03335', endColorstr='#00cfc8',GradientType=1 );
+}
+.fixed-bg, .fit-bg {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background-position: center center;
+    background-repeat: repeat;
+}
+.fixed-bg {
+    background-attachment: fixed !important;
+}
+.brd-rd3 {
+    border-radius: 3px;
+}
+a, input, button, textarea, :before, :after, .owl-nav > div, .owl-dots > div, .restaurants-wrapper > li, 
+.popular-dish-thumb > a img, .news-btns, nav ul ul, .chosen-results > li, .featured-restaurant-box, .toggle-item, 
+.toggle-item > h4, .toggle-item > h4 i, .rating-box > span, .switch-slider, .rate-share, .newsletter-popup-wrapper, 
+.gallery-info-btns, .gallery-bx > h3, .ingradient-list, .log-popup, .sign-popup, label, .topbar, .logo, 
+.logo > h1 img, nav > div > ul > li, nav > div > ul > li span, .responsive-logomenu > span, 
+.responsive-menu > span, .responsive-menu, .your-order-popup, .payment-popup-wrapper{
+    transition: all .3s linear;
+}
+.gradient-brd:before {
+    background: linear-gradient(90deg, #e03335 0%, #00cfc8 100%);
+}
+.gradient-brd:before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+}
+.gradient-brd:after {
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    content: "";
+}
+.price {
+    font-size: 22px;
+    font-family: Poppins;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+.radio-box [type="radio"]:checked, 
+.radio-box [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.radio-box [type="radio"]:checked + label, .radio-box [type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.radio-box [type="radio"]:checked + label:before, .radio-box [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    border-radius: 50%;
+}
+.radio-box [type="radio"]:not(:checked) + label:before{
+    border-radius: 50%;
+}
+.radio-box [type="radio"]:checked + label:after, .radio-box [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: red;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    border-radius: 50%;
+}
+.radio-box [type="radio"]:not(:checked) + label:after{
+    background-color: #ea1b25;
+}
+.radio-box [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.check-box [type="checkbox"]:checked, .check-box [type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.check-box [type="checkbox"]:checked + label, .check-box [type="checkbox"]:not(:checked) + label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+}
+.check-box [type="checkbox"]:checked + label:before, 
+.check-box [type="checkbox"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #d0d0d0;
+    background: #fff;
+}
+.check-box [type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+.check-box [type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.check-box [type="checkbox"]:checked + label:after, 
+.check-box [type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: red;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+}
+.brd-rd50, .restaurants-wrapper.style2 > li::before, .radio-box [type="radio"]:checked + label:before, 
+.radio-box [type="radio"]:not(:checked) + label:before, .radio-box [type="radio"]:checked + label:after, 
+.radio-box [type="radio"]:not(:checked) + label:after, .check-box [type="checkbox"]:checked + label:before, 
+.check-box [type="checkbox"]:not(:checked) + label:before, .check-box [type="checkbox"]:checked + label:after, 
+.check-box [type="checkbox"]:not(:checked) + label:after, .review-form:before, .switch-slider.brd-rd30:before, 
+.booking-table > table tbody td h5:before, .profile-info > a.change-password::before{
+    border-radius: 50%;
+}
+.check-box [type="checkbox"]:not(:checked) + label:after{
+    background-color: #ea1b25;
+}
+.brd-rd2, .featured-restaurant-carousel .owl-nav > div, 
+.sudo-bottom:before, .select-wrp2 .chosen-container > a {
+    border-radius: 2px;
+}
 /* Responsive Design CSS Start */
 @media all and (max-width: 767px){
-.modal-dialog .modal-body {
-    padding: 1rem .5rem;
-}
+
 }
 @media all and (max-width: 375px){
 .modal-header .modal-title {

@@ -8,7 +8,10 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BlogpostModule } from './blogpost/blogpost.module';
-  import { CmspageModule } from './cmspage/cmspage.module';
+import { CmspageModule } from './cmspage/cmspage.module';
+import { FoodRecipeModule } from './food-recipe/food-recipe.module';
+import { NewsletterComponent } from './newsletter/newsletter.component';
+import { CheckoutModule } from './checkout/checkout.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { BlogpostModule } from './blogpost/blogpost.module';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    NewsletterComponent    
   ],
   imports: [
     BrowserModule,
     CmspageModule,
     BlogpostModule,
+    FoodRecipeModule,
+    CheckoutModule,
     AppRoutingModule,
   ],
   providers: [],

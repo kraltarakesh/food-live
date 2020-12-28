@@ -1,0 +1,436 @@
+.block {
+    padding: 120px 0;
+    position: relative;
+    width: 100%;
+}
+.fixed-bg {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    background-position: center center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+.restaurant-searching {
+    width: 100%;
+    padding: 0 100px 100px;
+}
+.restaurant-searching-inner {
+    max-width: 992px;
+    width: 100%;
+    margin: 0 auto;
+}
+.restaurant-searching-inner > h2 {
+    font-family: Poppins;
+    color: #fff;
+    display: inline-block;
+    line-height: 55px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 48px;
+    max-width: 100%;
+    text-shadow: none;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+.restaurant-searching-inner > h2 span {
+    font-family: Great Vibes;
+    font-size: 60px;
+    font-weight: normal;
+}
+.restaurant-search-form {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.restaurant-search-form > input {
+    font-size: 10.8px;
+    color: #868686;
+    padding: 10px 30px;
+    height: 57px;
+    width: 88%;
+    border: medium none;
+}
+.restaurant-search-form > button:hover,
+.restaurant-search-form > button:active,
+.restaurant-search-form > button:focus,
+.restaurant-search-form > input:hover,
+.restaurant-search-form > input:active,
+.restaurant-search-form > input:focus {
+    outline: 0 none;
+    border: medium none;
+}
+.restaurant-search-form > button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 13.5px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    max-width: 172px;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    background-color: #ea1b25;
+    border: medium none;
+}
+.brd-rd2 {
+    border-radius: 30px;
+}
+.brd-rd30 {
+    border-radius: 30px;
+}
+.funfacts {
+    display: flex;
+    margin: 20px auto 0 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.fact-box {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.fact-box > i {
+    background-color: #fff;
+    display: inline-block;
+    height: 82px;
+    line-height: 82px;
+    margin-right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    width: 82px;
+    border-radius: 50%;
+}
+.fact-inner {
+    text-align: left;
+    width: calc(100% - 92px);
+}
+.fact-inner > strong {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 30px;
+    line-height: 1.424;
+    font-weight: 700;
+    max-height: 40px;
+    display: inline-block;
+}
+.fact-inner > h5 {
+    color: #aeaeae;
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%;
+}
+.left-scooty-mockup {
+    position: absolute;
+    left: -50px;
+    bottom: -120px;
+    z-index: 3;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s linear;
+}
+.left-scooty-mockup.easein {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.bottom-clouds-mockup {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.remove-bottom, .block.remove-bottom {
+    padding-bottom: 0;
+}
+.title1-wrapper {
+    width: 100%;
+    margin-bottom: 35px;
+}
+.title1-inner {
+    display: inline-block;
+    max-width: 55%;
+    vertical-align: middle;
+}
+.title1-inner span {
+    display: inline-block;
+    width: 100%;
+    font-family: Great Vibes;
+    font-size: 24px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+    color: #ea1b25;
+}
+.title1-inner > h2, .title1-inner > h3 {
+    color: #222;
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+.title1-inner > p {
+    color: #6f6f6f;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 0;
+    width: 100%;
+    line-height: 24px;
+}
+.blackish:before, .whitish:before, 
+.grayish:before, .blackish2:before, 
+.red-bg-layer:before, .yellow-bg-layer:before {
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.blackish:before {
+    background-color: #000000;
+}
+.low-opacity:before {
+    opacity: .7;
+}
+.blackish .setp-box-inner > h4, 
+.blackish .setp-box-inner > p {
+    color: #fff;
+}
+.no-padding, .block.no-padding {
+    padding: 0;
+}
+.overlape-110, .overlape-45, .overlape-95 {
+    margin-top: -110px;
+    position: relative;
+}
+.red-bg {
+    background-color: #ea1b25;
+}
+.app-info {
+    width: 100%;
+    margin-left: -25px;
+    margin-top: 60px;
+}
+.orange-bg .app-info > h4, .orange-bg .app-info > p, .red-bg .app-info > h4, .red-bg .app-info > p {
+    color: #fff;
+}
+.orange-bg .app-info > h4, .orange-bg .app-info > p, .red-bg .app-info > h4, .red-bg .app-info > p {
+    color: #fff;
+}
+.app-download-btns {
+    width: 100%;
+}
+.app-download-btns > a {
+    margin-top: 16px;
+    margin-right: 16px;
+}
+.step-box > i {
+    display: inline-block;
+    position: relative;
+    font-style: normal;
+}
+.title2-wrapper.text-center > .sudo-bottom::before, 
+.step-box > i span {
+    transform: translateX(-50%);
+}
+.step-box > i span {
+    position: absolute;
+    color: #fff;
+    width: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 15px;
+    left: 50%;
+    bottom: -13px;
+}
+span.brd-rd50{
+    border-radius: 50%;
+}
+.setp-box-inner {
+    width: 100%;
+    margin-top: 30px;
+}
+.blackish .setp-box-inner > h4, 
+.blackish .setp-box-inner > p {
+    color: #fff;
+}
+.setp-box-inner > h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.setp-box-inner > p {
+    font-size: 15px;
+    margin-bottom: 0;
+    display: inline-block;
+    max-width: 90%;
+}
+.block.blackish {
+    padding: 120px 0 180px;
+}
+/****  floating-Lable style start ****/
+.floating-label {position:relative; margin: 30px 20px;}
+.floating-input , .floating-select {font-size:14px;padding:4px 4px; display:block;
+    width:100%;height:30px; background-color: transparent;border:none;border-bottom:1px solid #757575;}  
+.floating-input:focus , .floating-select:focus { outline:none; border-bottom:2px solid #e8500e; }
+.floating-label label { color:#999; font-size:14px; font-weight:normal; position:absolute; 
+    pointer-events:none; left:0px; top:5px;transition:0.2s ease all;}
+.floating-label label .required {margin-left: 5px;color: #dc3545;}
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label { top:-18px; font-size:14px;color:#e8500e; }
+.floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label { top:-18px; font-size:14px; color: #e8500e;}  
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, 
+.floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {width:50%;}
+.floating-textarea {min-height: 30px;max-height: 260px; overflow:hidden;overflow-x: hidden; 
+}  
+/* highlighter */
+.highlight {position:absolute;height:50%; width:100%; top:15%; left:0;pointer-events:none;opacity:0.5;}
+/* active state */
+.floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+    animation:inputHighlighter 0.3s ease;
+}
+.floating-label .error {position: absolute;left: 0;top: 100%;}
+/* animation */
+@-webkit-keyframes inputHighlighter {
+    from { background: #e8500e; }
+to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+    from { background: #e8500e; }
+to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+    from { background: #e8500e; }
+to 	{ width:0; background:transparent; }
+}  
+  /****  floating-Lable style end ****/
+@media all and (max-width:1024px) {
+.block {
+    padding: 60px 0;
+}
+.block.blackish{
+    padding: 60px 0 140px;
+}
+.left-scooty-mockup {
+    max-width: 250px;
+}
+}
+@media all and (max-width: 991px) {
+  .fact-box {
+    padding-left: 50px;
+}
+}
+@media all and (max-width:768px) {
+.restaurant-searching-inner > h2 {
+    font-size: 40px;
+    max-width: 550px;
+}
+.left-scooty-mockup {
+    max-width: 200px;
+}
+.restaurant-searching {
+    padding: 0 60px 40px;
+}
+.restaurant-searching-inner{
+    max-width: 540px;
+}
+}
+@media all and (max-width:767px) {
+.fact-box {
+    padding-left: 0px;
+}
+.title1-inner {
+    max-width: 100%;
+}
+.app-sec .col-lg-4 img {
+    max-width: 200px;
+}
+.app-info {
+    margin-left: 0px;
+    margin-top: 20px;
+}
+.app-download-btns a + a {
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.app-sec .app-mockup {
+    text-align: left !important;
+}
+.app-download-btns > a {
+    margin-top: 16px;
+    margin-right: 16px;
+    display: inline-block;
+}
+.app-download-btns a + a {
+    margin-top: 16px;
+    margin-right: 0px;
+    margin-bottom: 16px;
+}
+.app-info {
+    margin-bottom: 10px;
+}
+.block {
+    padding: 30px 0;
+}
+.block.blackish{
+    padding: 30px 0 100px;
+}
+.setp-box-inner {
+    margin-bottom: 50px;
+}
+.title1-inner > h2, 
+.title1-inner > h3 {
+    font-size: 36px;
+}
+}
+@media all and (max-width:575px) {
+.left-scooty-mockup {
+   display: none;
+}
+.bottom-clouds-mockup{
+    bottom: -10px;
+}
+.restaurant-searching-inner > h2 span {
+    font-size: 30px;
+}
+.restaurant-searching-inner > h2 {
+    font-size: 25px;
+}
+.restaurant-searching {
+    padding: 0 15px 40px;
+}
+.app-sec .app-mockup {
+    display: none;
+}
+.block.blackish {
+    padding: 30px 0 0px;
+}
+.app-info {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.title1-inner > h2, 
+.title1-inner > h3 {
+    font-size: 30px;
+}
+.restaurant-search-form > button {
+    padding: 10px 10px;
+    max-width: 130px;
+}
+}
