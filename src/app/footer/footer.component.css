@@ -105,10 +105,32 @@ footer .footer-content {
 }
 @media screen and (max-width: 767px){
 .customer_care, .get_in_touch {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 footer .footer-content {
     padding: 30px 0;
+}
+.widget {
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+.get_in_touch ul li {
+    margin-top: 10px;
+}
+.widget ul li {
+    font-size: 13px;
+    color: #999;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 8px;
+}
+footer .widget-title {
+    margin: 0 0 10px;
+}
+.social-footer {
+    margin-bottom: 0px;
 }
 }
 @media screen and (max-width: 575px){
@@ -116,6 +138,13 @@ footer .footer-content {
     padding-left: 15px;
     padding-right: 15px;
 }
+.customer_care, .get_in_touch {
+    margin-top: 30px;
 }
+.customer_care, .get_in_touch {
+    margin-top: 30px;
+}
+}
+
 
 

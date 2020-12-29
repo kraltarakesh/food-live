@@ -5,6 +5,7 @@
 }
 .block.top-padd30 {
     padding: 30px;
+    padding-bottom: 142px;
 }
 .fixed-bg {
     height: 100%;
@@ -138,7 +139,7 @@
 .sec-box {
     margin: 0 auto;
     width: 100%;
-    padding: 50px 45px 140px;
+    padding: 40px;
     background-color: #fff;
 }
 .filter-buttons {
@@ -205,13 +206,18 @@
     padding-top: 0;
 }
 /* Recipe category section End */
+@media all and (min-width:768px) and (max-width:991px) {
+.app-info {
+    margin-top: 10px;
+}
+}
 @media all and (max-width:1024px) {
 .block {
     padding: 60px 0;
 }
 .restaurant-searching.style2 {
     margin-top: 0;
-    padding: 0px 100px 60px;
+    padding: 30px 100px 30px;
 }
 .block.blackish{
     padding: 60px 0 140px;
@@ -219,7 +225,7 @@
 }
 @media all and (max-width: 991px) {
 .sec-box {
-    padding: 30px 30px 140px;
+    padding: 20px;
 }
 .filters-inner .filter-item:nth-child(2) .featured-restaurant-box {
     padding-top: 22px;
@@ -228,6 +234,9 @@
 }
 .filters-inner .filter-item:first-child .featured-restaurant-box .post-rate {
     top: 0;
+}
+.filter-buttons > li a {
+    padding: 4px 14px;
 }
 }
 @media all and (max-width:768px) {
@@ -248,7 +257,8 @@
 }
 .app-info {
     margin-left: 0px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 .app-download-btns a + a {
     margin-top: 20px;
@@ -268,9 +278,6 @@
     margin-right: 0px;
     margin-bottom: 16px;
 }
-.app-info {
-    margin-bottom: 10px;
-}
 .block {
     padding: 30px 0;
 }
@@ -283,6 +290,24 @@
 .title1-inner > h2, 
 .title1-inner > h3 {
     font-size: 36px;
+}
+.block.top-padd30 {
+    padding-bottom: 30px;
+}
+.filter-buttons {
+    margin-bottom: 20px;
+}
+.featured-restaurant-info .post-rate {
+    right: 0px;
+}
+.filter-buttons > li {
+    font-size: 14px;
+}
+.featured-restaurant-info > h4 {
+    font-size: 16px;
+}
+.price {
+    font-size: 18px;
 }
 }
 @media all and (max-width:575px) {
@@ -320,10 +345,17 @@
     max-width: 130px;
 }
 .sec-box {
-    padding: 0px 0px 30px;
+    padding: 15px;
 }
 .featured-restaurant-info .post-rate {
     right: 0px;
+}
+.filter-sec {
+    padding-left: 0;
+    padding-right: 0;
+}
+.block.top-padd30 {
+    padding: 30px 15px;
 }
 }
 @media all and (max-width:480px) {
@@ -334,5 +366,10 @@
 }
 .featured-restaurant-thumb {
     width: 100px;
+}
+}
+@media all and (max-width:360px) {
+.filter-buttons > li {
+    font-size: 12px;
 }
 }

@@ -39,6 +39,7 @@
     width: 100%;
     padding: 15px;
     background-color: #f9f9f9;
+    height: 100%;
 }
 .reservation-tabs-list .nav-tabs {
     border-bottom: 0;
@@ -124,6 +125,10 @@
 }
 .tab-content>.active {
     opacity: 1;
+    height: 100%;
+}
+.tab-content,.reservation-tab-content {
+    height: 100%;
 }
 .restaurant-info-form {
     width: 100%;
@@ -183,6 +188,7 @@
     width: 100%;
     background-color: #f9f9f9;
     padding: 60px;
+    height: 100%;
 }
 .ordr-lst > li.red-bg span {
     border-left: 0;
@@ -288,6 +294,17 @@ textarea:hover,textarea:active,textarea:focus{
 }
 .reservation-tabs-list .nav-tabs {
     padding: 30px 15px;
+}
+.sec-box{
+    padding: 30px 30px;
+}
+.tab-content > .active {
+    height: auto;
+}
+}
+@media screen and (max-width: 575px){
+.sec-box {
+    padding: 15px 15px;
 }
 }
 @media screen and (max-width: 480px){

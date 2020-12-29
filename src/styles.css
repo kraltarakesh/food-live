@@ -328,6 +328,9 @@ a, input, button, textarea, :before, :after, .owl-nav > div, .owl-dots > div, .r
 .post-rate > i {
     font-size: 12px;
 }
+body.modal-open,.modal.show{
+    padding-right: 0px !important;
+}
 /* Responsive Design CSS Start */
 @media all and (max-width: 767px){
 
@@ -344,3 +347,277 @@ a, input, button, textarea, :before, :after, .owl-nav > div, .owl-dots > div, .r
     padding: 1rem .5rem;
 }
 }
+
+
+/* Login Form CSS Start */
+.newsletter-popup-inner{
+    background-color: #f4fbf6;
+    background-repeat: no-repeat;
+    display: inline-block;
+    max-width: 650px;
+    padding: 50px 130px 45px 50px;
+    position: relative;
+    text-align: left;
+    background-image: url("assets/images/newsletter-bg.jpg");
+    width: 100%;
+}
+.newsletter-popup-inner.form-popup {
+    background-position: right bottom;
+}
+.newsletter-popup-inner.form-popup > * {
+    max-width: 410px;
+}
+.newsletter-popup-wrapper .modal-body {
+    padding: 0;
+}
+.newsletter-popup-inner > a.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #333;
+    font-size: 11px;
+    line-height: 26px;
+    width: 26px;
+}
+.sign-popup-title {
+    width: 100%;
+    margin-bottom: 22px;
+}
+.sign-popup-title > h4 {
+    font-size: 30px;
+    font-family: Poppins;
+    color: #000;
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+.sign-popup-title > span {
+    font-size: 13px;
+    font-family: Poppins;
+    color: #444;
+}
+.popup-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.popup-social > a {
+    display: inline-block;
+    margin: 3px;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 28px;
+    border-width: 2px;
+    border-style: solid;
+}
+.popup-social > a i {
+    font-size: 13px;
+}
+a.facebook, a.facebook-clr:hover {
+    background: #3b5998;
+    border-color: #3b5998;
+}
+a.google, a.google-clr:hover {
+    background: #dd4b39;
+    border-color: #dd4b39;
+}
+a.twitter, a.twitter-clr:hover {
+    background: #55acee;
+    border-color: #55acee;
+}
+.newsletter-btn {
+    margin: 30px;
+    background-color: #ea1b25;
+    border-color: #ea1b25;
+}
+.popup-social > a:hover {
+    background-color: transparent;
+}
+.popup-seprator {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+    margin: 30px 0;
+}
+a.twitter-clr, a.twitter:hover {
+    border-color: #55acee;
+    color: #55acee;
+}
+a.google-clr, a.google:hover {
+    border-color: #dd4b39;
+    color: #dd4b39;
+}
+a.facebook-clr, a.facebook:hover {
+    border-color: #3b5998;
+    color: #3b5998;
+}
+.sign-form {
+    width: 100%;
+}
+.newsletter-btn:hover,
+.newsletter-btn:active,
+.newsletter-btn:focus{
+    outline: 0 none !important;
+    box-shadow: unset !important;
+    background-color: #ea1b25;
+    border-color: #ea1b25;
+}
+.newsletter-popup-inner > h3 {
+    font-size: 22px;
+    font-family: Poppins;
+    color: #444;
+    line-height: 20px;
+    margin-bottom: 24px;
+    max-width: 70%;
+    padding-left: 60px;
+    position: relative;
+    margin-top: 0;
+}
+.newsletter-popup-inner > h3 i {
+    font-size: 40px;
+    margin-right: 13px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.newsletter-popup-inner > p {
+    font-size: 15px;
+    color: #666;
+    line-height: 25px;
+    max-width: 80%;
+    margin-bottom: 30px;
+}
+.newsletter-popup-inner > span i {
+    font-size: 13px;
+    margin-right: 10px;
+}
+.form-wrapper.modal-dialog {
+    width: 100%;
+    max-width: 620px;
+}
+.newsletter-frm {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 24px rgba(0,0,0,.12);
+    margin-bottom: 30px;
+}
+.newsletter-frm > input {
+    padding: 10px 30px;
+    font-size: 10.8px;
+    border: medium none;
+    color: #838383;
+    height: 57px;
+    width: 100%;
+}
+.newsletter-frm > button {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Poppins;
+    border: medium none;
+    padding: 0 30px;
+}
+.newsletter-frm > button:hover,
+.newsletter-frm > button:active,
+.newsletter-frm > button:focus,
+.newsletter-frm > input:hover,
+.newsletter-frm > input:active,
+.newsletter-frm > input:focus{
+    outline: 0 none;
+}
+.newsletter-popup-inner > span {
+    font-size: 14px;
+    width: 100%;
+}
+.popup-seprator > i {
+    font-style: normal;
+    font-size: 13px;
+    font-family: Poppins;
+    color: #444;
+    position: absolute;
+    left: 50%;
+    line-height: 30px;
+    width: 30px;
+    background-color: #fff;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+}
+.sign-form input {
+    float: left;
+    width: 100%;
+    font-size: 10.8px;
+    color: #a2a2a2;
+    background-color: #fff;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px 28px;
+    border: medium none;
+}
+.brd-rd3 {
+    border-radius: 3px;
+}
+.sign-form button {
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    font-family: Poppins;
+    padding: 15px 20px;
+    border: medium none;
+}
+.sign-form a {
+    display: inline-block;
+    margin-top: 19px;
+    color: #444;
+    font-size: 11px;
+    font-family: Poppins;
+}
+.sign-form a:hover {
+    color: #ea1b25;
+    text-decoration: none;
+}
+.forgot-part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media all and (max-width: 667px) {
+.newsletter-popup-inner {
+    padding: 30px 30px 30px 30px;
+}
+.newsletter-popup-wrapper.modal-dialog{
+    max-width: 95%;
+}
+.newsletter-popup-inner > p {
+    max-width: 380px;
+}
+.newsletter-popup-inner > h3 {
+    max-width: 320px;
+}
+}
+@media all and (max-width: 480px) {
+.newsletter-frm > button {
+    padding: 0 18px;
+}
+.newsletter-popup-inner {
+    padding: 30px 15px;
+}
+.newsletter-frm > input {
+    padding: 10px 15px;
+}
+.newsletter-popup-inner > h3 {
+    padding-left: 50px;
+    max-width: 235px;
+}
+.popup-social > a {
+    min-width: 140px;
+}
+}
+/* Login Form CSS Start */

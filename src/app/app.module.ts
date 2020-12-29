@@ -12,6 +12,7 @@ import { CmspageModule } from './cmspage/cmspage.module';
 import { FoodRecipeModule } from './food-recipe/food-recipe.module';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { CheckoutModule } from './checkout/checkout.module';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CheckoutModule } from './checkout/checkout.module';
     FooterComponent,
     HomeComponent,
     PageNotFoundComponent,
-    NewsletterComponent    
+    NewsletterComponent,
+    LoginComponent    
   ],
   imports: [
     BrowserModule,
