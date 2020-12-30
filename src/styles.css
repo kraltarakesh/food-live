@@ -328,8 +328,19 @@ a, input, button, textarea, :before, :after, .owl-nav > div, .owl-dots > div, .r
 .post-rate > i {
     font-size: 12px;
 }
+.remove-ext, .remove-ext2, .remove-ext3, .remove-ext4, .remove-ext5 {
+    display: inline-block;
+    margin-bottom: -30px;
+}
 body.modal-open,.modal.show{
     padding-right: 0px !important;
+}
+textarea:hover,textarea:active,textarea:focus{
+    outline: 0 none;
+    box-shadow: unset;
+}
+.tab-content>.active {
+    opacity: 1;
 }
 /* Responsive Design CSS Start */
 @media all and (max-width: 767px){
