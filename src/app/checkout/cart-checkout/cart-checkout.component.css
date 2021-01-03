@@ -1,4 +1,5 @@
 .block {
+    padding: 130px 0;
     position: relative;
     width: 100%;
 }
@@ -281,10 +282,18 @@ textarea:hover,textarea:active,textarea:focus{
     font-weight: 500;
     margin-top: 12px;
 }
+@media screen and (max-width: 1024px){
+.block {
+    padding: 60px 0;
+}
+}
 @media screen and (max-width: 767px){
 .order-wrapper2,.restaurant-info-form {
     width: 100%;
     padding: 30px;
+}
+.block {
+    padding: 30px 15px;
 }
 .block.top-padd30{
     padding: 30px 15px;
@@ -322,5 +331,10 @@ textarea:hover,textarea:active,textarea:focus{
 }
 .page-title-inner > span {
     font-size: 18px;
+}
+}
+@media screen and (max-width: 360px){
+.step-buttons button, .step-buttons a {
+    padding: 13px 18px;
 }
 }
