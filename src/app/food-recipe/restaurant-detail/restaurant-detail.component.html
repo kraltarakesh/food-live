@@ -1,6 +1,6 @@
 <section>
     <div class="block">
-        <div style="background-image: url(/assets/images/parallax2.jpg);" class="fixed-bg"></div>
+        <div style="background-image: url(assets/images/parallax2.jpg);" class="fixed-bg"></div>
         <div class="restaurant-searching style2 text-center">
             <div class="restaurant-searching-inner">
                 <h2><span>Delicious</span><span class="red-clr"> Food</span><br /> Order deliver & take-out</h2>
@@ -20,7 +20,7 @@
                     <div class="sec-box">
                         <div class="sec-wrapper">
                             <div class="row">
-                                <div class="col-md-8 col-sm-12 col-lg-8">
+                                <div class="col-md-12 col-sm-12 col-lg-8">
                                     <div class="restaurant-detail-wrapper">
                                         <div class="restaurant-detail-info">
                                             <div class="restaurant-detail-thumb">
@@ -44,8 +44,8 @@
                                                     <span><a href="#" title="" >Bakery</a>, <a href="#" title="" >Cafe</a></span>
                                                 </div>
                                                 <div class="rating-wrapper">
-                                                    <a class="gradient-brd brd-rd2" href="#" title="" ><i class="fa fa-star"></i> Rate <i>4.0</i></a>
-                                                    <div class="rate-share brd-rd5 d-none">
+                                                    <a class="gradient-brd brd-rd2" (click)=toggleRating() title="" ><i class="fa fa-star"></i> Rate <i>4.0</i></a>
+                                                    <div class="rate-share brd-rd5" *ngIf="!isShowrating">
                                                         <div class="rating-box-wrapper">
                                                             <span>Rate</span>
                                                             <div class="rating-box">
@@ -81,11 +81,11 @@
                                             </div>
                                             <div class="restaurant-detail-tabs">
                                                 <ul class="nav nav-tabs">
-                                                    <li class=""><a class="active" href="#tab1-1" data-toggle="tab" aria-expanded="false"><i class="fa fa-cutlery"></i> Menu</a></li>
-                                                    <li class=""><a href="#tab1-2" data-toggle="tab" aria-expanded="false"><i class="fa fa-picture-o"></i> Gallery</a></li>
-                                                    <li class=""><a href="#tab1-3" data-toggle="tab" aria-expanded="false"><i class="fa fa-star"></i> Reviews</a></li>
-                                                    <li><a href="#tab1-4" data-toggle="tab" aria-expanded="false"><i class="fa fa-book"></i> Book A Table</a></li>
-                                                    <li class=""><a href="#tab1-5" data-toggle="tab" aria-expanded="true"><i class="fa fa-info"></i> Restaurant Info</a></li>
+                                                    <li class=""><a class="active" href="#tab1-1" data-toggle="tab" aria-expanded="false"><span class="number d-inline-block d-sm-none">1</span><i class="fa fa-cutlery"></i><span class="d-none d-sm-inline-block">Menu</span></a></li>
+                                                    <li class=""><a href="#tab1-2" data-toggle="tab" aria-expanded="false"><span class="number d-inline-block d-sm-none">2</span><i class="fa fa-picture-o"></i><span class="d-none  d-sm-inline-block">Gallery</span></a></li>
+                                                    <li class=""><a href="#tab1-3" data-toggle="tab" aria-expanded="false"><span class="number d-inline-block d-sm-none">3</span><i class="fa fa-star"></i><span class="d-none  d-sm-inline-block">Reviews</span></a></li>
+                                                    <li><a href="#tab1-4" data-toggle="tab" aria-expanded="false"><span class="number d-inline-block d-sm-none">4</span><i class="fa fa-book"></i><span class="d-none  d-sm-inline-block">Book A Table</span></a></li>
+                                                    <li class=""><a href="#tab1-5" data-toggle="tab" aria-expanded="true"><span class="number d-inline-block d-sm-none">5</span><i class="fa fa-info"></i><span class="d-none  d-sm-inline-block">Restaurant Info</span></a></li>
                                                 </ul>
                                                 <div class="tab-content">
                                                     <div class="tab-pane fade active in" id="tab1-1">
@@ -362,7 +362,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane fade" id="tab1-4">
-                                                        <div class="book-table d-none">
+                                                        <div class="book-table">
                                                             <h4 class="title3"><span class="sudo-bottom sudo-bg-red">Book</span> This Restaurant Table</h4>
                                                             <form>
                                                                 <div class="row">
@@ -392,7 +392,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane fade" id="tab1-5">
-                                                        <div class="restaurant-info-wrapper d-none">
+                                                        <div class="restaurant-info-wrapper">
                                                             <h3 class="title3"><span class="sudo-bottom sudo-bg-red">Book</span> This Restaurant Table</h3>
                                                             <ul class="restaurant-info-list">
                                                                 <li>
@@ -423,7 +423,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-12 col-lg-4">
+                                <div class="col-md-12 col-sm-12 col-lg-4">
                                     <div class="order-wrapper right wow fadeIn" data-wow-delay="0.2s">
                                         <div class="order-inner gradient-brd">
                                             <h4>Your Order</h4>

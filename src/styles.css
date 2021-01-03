@@ -106,6 +106,9 @@ body .form-group label {
 .post-rate > i {
     font-size: 12px;
 }
+.brd-rd2 {
+    border-radius: 2px;
+}
 .brd-rd2, .featured-restaurant-carousel .owl-nav > div, 
 .sudo-bottom:before, .select-wrp2 .chosen-container > a {
     border-radius: 2px;

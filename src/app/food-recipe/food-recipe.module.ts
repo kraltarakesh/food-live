@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { FoodRecipeRoutingModule } from './food-recipe-routing.module';
 import { RecipesComponent } from './recipes/recipes.component';
-import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 
 
 @NgModule({
-  declarations: [RecipesComponent, RecipeDetailComponent],
+  declarations: [RecipesComponent, RestaurantDetailComponent],
   imports: [
     CommonModule,
     FoodRecipeRoutingModule
